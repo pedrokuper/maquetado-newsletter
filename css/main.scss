@@ -1,0 +1,348 @@
+//@import url('https://fonts.googleapis.com/css?family=Radley&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:500&display=swap");
+//@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+$title: "Roboto Slab", serif;
+$subtitle: "Open Sans", sans-serif;
+$mobile-breakpoint: 568px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.line {
+  border-bottom: 2.5px solid #fff;
+  width: 65px;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .hero {
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1942&q=80);
+    background-repeat: cover;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(104, 104, 104, 0.258);
+    background-blend-mode: multiply;
+
+    @media (max-width: $mobile-breakpoint) {
+      background-color: rgb(102, 102, 102);
+      background-blend-mode: overlay;
+    }
+    .nav-bar {
+      display: flex;
+      padding: 20px;
+      justify-content: flex-end;
+      font-family: $subtitle;
+
+      .link {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        margin: 20px 10px 20px 45px;
+        letter-spacing: 0.4rem;
+
+        @media (max-width: $mobile-breakpoint) {
+          display: none;
+        }
+      }
+
+      & .subscribe-link {
+        border: 2px solid white;
+      }
+    }
+
+    .burger-menu {
+      display: flex;
+      justify-content: flex-end;
+      @media (min-width: $mobile-breakpoint) {
+        display: none;
+      }
+
+      .fas {
+        padding: 30px;
+      }
+      .fa-bars {
+        color: white;
+        font-size: 3rem;
+      }
+    }
+
+    .hero-title {
+      margin: 20px 30px;
+      color: #fff;
+
+      .title {
+        letter-spacing: 0.3rem;
+        margin-top: 150px;
+        font-size: 6rem;
+        margin-bottom: 10px;
+        font-family: $title;
+      }
+
+      .subtitle {
+        letter-spacing: 0.3rem;
+
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.904);
+        margin-bottom: 20px;
+        font-family: $subtitle;
+        @media (max-width: $mobile-breakpoint) {
+          color: rgba(255, 255, 255, 0.904);
+        }
+      }
+
+      .line {
+        border-bottom: 2.5px solid #fff;
+        width: 65px;
+        font-family: sans-serif;
+        margin-bottom: 150px;
+
+        @media (max-width: $mobile-breakpoint) {
+          margin-bottom: 420px;
+        }
+      }
+    }
+
+    .hero-description {
+      text-align: center;
+      margin: 100px auto 100px auto;
+      color: #ffffff;
+      max-width: 500px;
+      line-height: 2rem;
+
+      .title {
+        font-size: 3.2rem;
+        margin-bottom: 15px;
+        font-family: $title;
+        letter-spacing: 0.3rem;
+
+        @media (max-width: $mobile-breakpoint) {
+          margin-bottom: 50px;
+        }
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        font-family: $subtitle;
+      }
+
+      .line {
+        margin: 10px auto;
+        border-bottom: 1.5px solid #fff;
+      }
+
+      .hero-description-text {
+        margin-bottom: 50px;
+        font-size: 1.3rem;
+        font-family: $subtitle;
+
+        @media (max-width: $mobile-breakpoint) {
+          margin: 0 auto;
+          font-size: 1.2rem;
+          max-width: 450px;
+          text-align: center;
+          line-height: 3.2rem;
+        }
+      }
+    }
+  }
+
+  .articles {
+    background-color: rgb(51, 51, 51);
+    background-blend-mode: overlay;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $mobile-breakpoint) {
+      align-items: stretch;
+    }
+
+    .article-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-family: $title;
+        margin-top: 20px;
+        font-size: 2.02rem;
+        margin-bottom: 5px;
+      }
+
+      .subtitle {
+        font-family: $subtitle;
+        font-size: 0.9rem;
+      }
+
+      .line {
+        margin: 20px auto;
+        border-bottom: 1.5px solid white;
+      }
+    }
+
+    .article-thumbnails {
+      display: flex;
+
+      margin: 0 10px 100px 0;
+      justify-content: space-evenly;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      @media (max-width: $mobile-breakpoint) {
+        display: block;
+        margin: 10px 20px;
+      }
+
+      .thumbnail1 {
+        background-image: url(https://images.unsplash.com/photo-1573144693925-249c8159d330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=643&q=80);
+        background-size: cover;
+        background-position: center;
+      }
+      .thumbnail2 {
+        background-image: url(https://images.unsplash.com/photo-1556139954-ec19cce61d61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        background-size: cover;
+        background-position: center;
+      }
+      .thumbnail3 {
+        background-image: url(https://images.unsplash.com/photo-1556660418-fc293a5d848d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .thumb-size {
+        background-position: center;
+        background-size: cover;
+        max-width: calc(100% - 10px);
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 1px 1.5px 6px 1px rgba(0, 0, 0, 0.4);
+        height: 500px;
+        @media (max-width: $mobile-breakpoint) {
+          margin: 10px 10px;
+          height: 500px;
+          max-width: 100%;
+          margin: 10px 0px;
+        }
+
+        .thumb-text-position {
+          margin-top: 400px;
+          min-width: 220px;
+        }
+      }
+
+      .thumbnail-title {
+        font-size: 1.5rem;
+        color: white;
+        font-family: $title;
+      }
+
+      .thumbnail-subtitle {
+        font-size: 0.8rem;
+        color: white;
+        font-family: $subtitle;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+      }
+
+      .line {
+        margin: 10px auto;
+        border-bottom: 1.5px solid white;
+        width: 45px;
+      }
+    }
+  }
+
+  .subscribe {
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      font-family: $subtitle;
+      color: rgb(189, 189, 189);
+      margin-bottom: 20px;
+    }
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: $mobile-breakpoint) {
+        min-width: 50%;
+      }
+
+      .email-input {
+        text-align: left;
+        min-width: 500px;
+        padding: 15px 10px;
+        flex-grow: 1;
+        margin-bottom: 50px;
+        background-color: rgb(51, 51, 51);
+        color: white;
+      }
+
+      .submit-button {
+        margin: 0 auto;
+        max-width: 500px;
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        padding: 15px 50px;
+        margin-bottom: 100px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: $subtitle;
+        letter-spacing: 0.4rem;
+      }
+    }
+  }
+
+  .footer {
+    background-color: rgb(51, 51, 51);
+
+    .footer-links {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 50px;
+      padding-top: 10px;
+
+      .link {
+        margin: 80px 15px 80px 15px;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 0.75rem;
+        font-family: $subtitle;
+        letter-spacing: 0.2rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
