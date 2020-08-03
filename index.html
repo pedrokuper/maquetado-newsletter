@@ -1,86 +1,94 @@
 <html>
+  <head>
+    <title>Newsletter</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <title>Desafío CSS 12</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
-
-<body>
-  <div class="wrapper">
-    <section class="hero">
-
-      <nav class="nav-bar">
-        <a href="#about" class="link">ABOUT</a>
-        <a href="#article" class="link">ARTICLES</a>
-        <a href="#subscribe" class="link subscribe-link">SUBSCRIBE</a>
-        <div class="burger-menu">
-          <i class="fas fa-bars"></i>
+  <body>
+    <div class="wrapper">
+      <section class="hero">
+        <nav class="nav-bar">
+          <a href="#about" class="link">ABOUT</a>
+          <a href="#article" class="link">ARTICLES</a>
+          <a href="#subscribe" class="link subscribe-link">SUBSCRIBE</a>
+          <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+        <div class="hero-title" id="about">
+          <h1 class="title">Inferno</h1>
+          <h2 class="subtitle">A walk through hell in earth</h2>
+          <div class="line"></div>
         </div>
-      </nav>
-      <div class="hero-title" id="about">
-        <h1 class="title">Inferno</h1>
-        <h2 class="subtitle">A walk through hell in earth</h2>
-        <div class="line"></div>
-      </div>
-      <div class="hero-description">
-        <h2 class="title">Exploration</h2>
-        <h3 class="subtitle">An adventure blog</h3>
-        <div class="line"></div>
-        <div class="hero-description-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          delectus mollitia qui et, autem fugiat cumque quaerat est unde
-          recusandae sequi quibusdam quisquam soluta doloremque! Nobis
-          perspiciatis ipsum unde assumenda?
-        </div>
-      </div>
-    </section>
-    <section class="articles" id="article">
-      <div class="article-text">
-        <h1 class="title">Latest articles</h1>
-        <h2 class="subtitle">OUR MOST RECENT POSTS</h2>
-        <div class="line"></div>
-      </div>
-      <div class="article-thumbnails">
-        <div class="thumbnail1 thumb-size">
-          <div class="thumb-text-position">
-            <h4 class="thumbnail-title thumbnail-margin">Krakatoa</h4>
-            <h5 class="thumbnail-subtitle thumbnail-margin">Dangerous Times</h5>
-            <div class="line"></div>
+        <div class="hero-description">
+          <h2 class="title">Exploration</h2>
+          <h3 class="subtitle">An adventure blog</h3>
+          <div class="line"></div>
+          <div class="hero-description-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            delectus mollitia qui et, autem fugiat cumque quaerat est unde
+            recusandae sequi quibusdam quisquam soluta doloremque! Nobis
+            perspiciatis ipsum unde assumenda?
           </div>
         </div>
-        <div class="thumbnail2 thumb-size">
-          <div class="thumb-text-position">
-            <h4 class="thumbnail-title">CINEMATIC</h4>
-            <h5 class="thumbnail-subtitle">Werner Hergoz</h5>
-            <div class="line"></div>
+      </section>
+      <section class="articles" id="article">
+        <div class="article-text">
+          <h1 class="title">Latest articles</h1>
+          <h2 class="subtitle">OUR MOST RECENT POSTS</h2>
+          <div class="line"></div>
+        </div>
+        <div class="article-thumbnails">
+          <div class="thumbnail1 thumb-size">
+            <div class="thumb-text-position">
+              <h4 class="thumbnail-title thumbnail-margin">Krakatoa</h4>
+              <h5 class="thumbnail-subtitle thumbnail-margin">
+                Dangerous Times
+              </h5>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="thumbnail2 thumb-size">
+            <div class="thumb-text-position">
+              <h4 class="thumbnail-title">CINEMATIC</h4>
+              <h5 class="thumbnail-subtitle">Werner Hergoz</h5>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="thumbnail3 thumb-size">
+            <div class="thumb-text-position">
+              <h4 class="thumbnail-title">Mauna Loa</h4>
+              <h5 class="thumbnail-subtitle">Artistic Lava</h5>
+              <div class="line"></div>
+            </div>
           </div>
         </div>
-        <div class="thumbnail3 thumb-size">
-          <div class="thumb-text-position">
-            <h4 class="thumbnail-title">Mauna Loa</h4>
-            <h5 class="thumbnail-subtitle">Artistic Lava</h5>
-            <div class="line"></div>
-          </div>
+      </section>
+      <section class="subscribe" id="subscribe">
+        <h2 class="title">Subscribe</h2>
+        <h3 class="subtitle">SIGN UP TO OUR NEWSLETTER</h3>
+        <form action="" class="subscribe-form">
+          <input
+            class="email-input"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="Your email"
+          />
+          <input class="submit-button" type="submit" value="Submit" />
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="#about" class="link">ABOUT</a>
+          <a href="#article" class="link">ARTICLES</a>
+          <a href="#subscribe" class="link link subscribe-link">SUBSCRIBE</a>
         </div>
-      </div>
-    </section>
-    <section class="subscribe" id="subscribe">
-      <h2 class="title">Subscribe</h2>
-      <h3 class="subtitle">SIGN UP TO OUR NEWSLETTER</h3>
-      <form action="" class="subscribe-form">
-        <input class="email-input" type="email" name="user-email" id="user-email" placeholder="Your email" />
-        <input class="submit-button" type="submit" value="Submit" />
-      </form>
-    </section>
-    <footer class="footer">
-      <div class="footer-links">
-        <a href="#about" class="link">ABOUT</a>
-        <a href="#article" class="link">ARTICLES</a>
-        <a href="#subscribe" class="link link subscribe-link">SUBSCRIBE</a>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
